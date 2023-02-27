@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ListProductComponent } from './list-product/list-product.component';
 import { ProductComponent } from './product/product.component';
 
 const routes: Routes = [
   {
     path: 'product',
     component: ProductComponent,
+  },
+  {
+    path: 'list-product',
+    component: ListProductComponent,
   },
 ];
 
@@ -15,4 +20,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule {}
 
-export const RoutingComponent = [ProductComponent];
+export const RoutingComponent = [ProductComponent, ListProductComponent];
