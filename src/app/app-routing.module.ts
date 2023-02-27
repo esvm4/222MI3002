@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ListCatalogueComponent } from './list-catalogue/list-catalogue.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { ListProduct2Component } from './list-product2/list-product2.component';
 import { ProductComponent } from './product/product.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
     path: 'list-product2',
     component: ListProduct2Component,
   },
+  {
+    path: 'list-catalogue',
+    component: ListCatalogueComponent,
+  },
 ];
 
 @NgModule({
@@ -29,4 +34,5 @@ export const RoutingComponent = [
   ProductComponent,
   ListProductComponent,
   ListProduct2Component,
+  ListCatalogueComponent,
 ];
