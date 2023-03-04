@@ -5,6 +5,8 @@ import { ListProductComponent } from './list-product/list-product.component';
 import { ListProduct2Component } from './list-product2/list-product2.component';
 import { ProductComponent } from './product/product.component';
 import { MyComponentComponent } from './module01/my-component/my-component.component';
+import { BindingPropertyComponentComponent } from './module01/binding-property-component/binding-property-component.component';
+import { IndexComponent } from './module01/index/index.component';
 
 const routes: Routes = [
   {
@@ -24,8 +26,16 @@ const routes: Routes = [
     component: ListCatalogueComponent,
   },
   {
+    path: 'index-component',
+    component: IndexComponent,
+  },
+  {
     path: 'my-component',
     component: MyComponentComponent,
+  },
+  {
+    path: 'binding-property-component',
+    component: BindingPropertyComponentComponent,
   },
 ];
 
@@ -40,5 +50,7 @@ export const RoutingComponent = [
   ListProductComponent,
   ListProduct2Component,
   ListCatalogueComponent,
+  IndexComponent,
   MyComponentComponent,
+  BindingPropertyComponentComponent,
 ];
