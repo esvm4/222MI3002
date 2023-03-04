@@ -1,0 +1,20 @@
+<h1>binding-property-component works!</h1>
+
+<button (click)="toggleEmail()">
+  <ng-container *ngIf="!isDisabled">Hide email</ng-container>
+  <ng-container *ngIf="isDisabled">Show email</ng-container>
+</button>
+<table>
+  <tr>
+    <th>Name</th>
+    <th *ngIf="!isDisabled">Email</th>
+    <th>NameID</th>
+    <th>EmailID</th>
+  </tr>
+  <tr>
+    <td [innerHTML]="name"></td>
+    <td *ngIf="!isDisabled">{{ email }}</td>
+    <td>{{ nameid }}</td>
+    <td>{{ emailid }}</td>
+  </tr>
+</table>
