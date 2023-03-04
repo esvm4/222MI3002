@@ -1,0 +1,18 @@
+<h1>binding-class works!</h1>
+<hr />
+
+<h1 [ngClass]="success">Successful 1</h1>
+<h1 [ngClass]="error">Error 1</h1>
+<h1 [ngClass]="primary">Primary 1</h1>
+<h1 [ngClass]="normal">Normal 1</h1>
+<h1 [ngClass]="multiClass">Multi class 1</h1>
+<h1 [ngClass]="complexity">Text complexity 1</h1>
+
+<hr />
+<h2 class="{{ success }}">Successful 2</h2>
+<h2 class="{{ error }}">Error 2</h2>
+<h2 class="{{ primary }}">Primary 2</h2>
+<h2 class="{{ normal }}">Normal 2</h2>
+<h2 class="{{ multiClass }}">Multi class 2</h2>
+
+<h1 class="{{ complexity }}">Text complexity 2</h1>

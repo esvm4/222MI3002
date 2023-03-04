@@ -7,6 +7,7 @@ import { ProductComponent } from './product/product.component';
 import { MyComponentComponent } from './module01/my-component/my-component.component';
 import { BindingPropertyComponentComponent } from './module01/binding-property-component/binding-property-component.component';
 import { IndexComponent } from './module01/index/index.component';
+import { BindingClassComponent } from './module01/binding-class/binding-class.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
     path: 'binding-property-component',
     component: BindingPropertyComponentComponent,
   },
+  {
+    path: 'binding-class',
+    component: BindingClassComponent,
+  },
 ];
 
 @NgModule({
@@ -53,4 +58,5 @@ export const RoutingComponent = [
   IndexComponent,
   MyComponentComponent,
   BindingPropertyComponentComponent,
+  BindingClassComponent,
 ];

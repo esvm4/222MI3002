@@ -10,6 +10,7 @@ import { ListCatalogueComponent } from './list-catalogue/list-catalogue.componen
 import { MyComponentComponent } from './module01/my-component/my-component.component';
 import { BindingPropertyComponentComponent } from './module01/binding-property-component/binding-property-component.component';
 import { IndexComponent } from './module01/index/index.component';
+import { BindingClassComponent } from './module01/binding-class/binding-class.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { IndexComponent } from './module01/index/index.component';
     MyComponentComponent,
     BindingPropertyComponentComponent,
     IndexComponent,
+    BindingClassComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
