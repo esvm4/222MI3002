@@ -11,6 +11,7 @@ import { MyComponentComponent } from './module01/my-component/my-component.compo
 import { BindingPropertyComponentComponent } from './module01/binding-property-component/binding-property-component.component';
 import { IndexComponent } from './module01/index/index.component';
 import { BindingClassComponent } from './module01/binding-class/binding-class.component';
+import { BindingStyleComponent } from './module01/binding-style/binding-style.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { BindingClassComponent } from './module01/binding-class/binding-class.co
     BindingPropertyComponentComponent,
     IndexComponent,
     BindingClassComponent,
+    BindingStyleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
