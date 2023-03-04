@@ -4,6 +4,7 @@ import { ListCatalogueComponent } from './list-catalogue/list-catalogue.componen
 import { ListProductComponent } from './list-product/list-product.component';
 import { ListProduct2Component } from './list-product2/list-product2.component';
 import { ProductComponent } from './product/product.component';
+import { MyComponentComponent } from './module01/my-component/my-component.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
     path: 'list-catalogue',
     component: ListCatalogueComponent,
   },
+  {
+    path: 'my-component',
+    component: MyComponentComponent,
+  },
 ];
 
 @NgModule({
@@ -35,4 +40,5 @@ export const RoutingComponent = [
   ListProductComponent,
   ListProduct2Component,
   ListCatalogueComponent,
+  MyComponentComponent,
 ];
