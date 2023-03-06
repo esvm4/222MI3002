@@ -10,6 +10,7 @@ import { IndexComponent } from './module01/index/index.component';
 import { BindingClassComponent } from './module01/binding-class/binding-class.component';
 import { BindingStyleComponent } from './module01/binding-style/binding-style.component';
 import { BindingEventComponent } from './module01/binding-event/binding-event.component';
+import { BindingTwoWayComponent } from './module01/binding-two-way/binding-two-way.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
     path: 'binding-event',
     component: BindingEventComponent,
   },
+  {
+    path: 'binding-two-way',
+    component: BindingTwoWayComponent,
+  },
 ];
 
 @NgModule({
@@ -71,4 +76,5 @@ export const RoutingComponent = [
   BindingClassComponent,
   BindingStyleComponent,
   BindingEventComponent,
+  BindingTwoWayComponent,
 ];

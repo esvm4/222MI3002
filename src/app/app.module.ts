@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule, RoutingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { IndexComponent } from './module01/index/index.component';
 import { BindingClassComponent } from './module01/binding-class/binding-class.component';
 import { BindingStyleComponent } from './module01/binding-style/binding-style.component';
 import { BindingEventComponent } from './module01/binding-event/binding-event.component';
+import { BindingTwoWayComponent } from './module01/binding-two-way/binding-two-way.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +30,9 @@ import { BindingEventComponent } from './module01/binding-event/binding-event.co
     BindingClassComponent,
     BindingStyleComponent,
     BindingEventComponent,
+    BindingTwoWayComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
