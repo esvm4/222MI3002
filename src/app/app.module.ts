@@ -19,6 +19,8 @@ import { QuadraticEquationComponent } from './module01/quadratic-equation/quadra
 import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
 import { JsonObjectModelComponent } from './module01/json-object-model/json-object-model.component';
 import { JsonArrayModelComponent } from './module01/json-array-model/json-array-model.component';
+import { ServiceProductImageEventComponent } from './module01/service-product-image-event/service-product-image-event.component';
+import { ServiceProductImageEventDetailComponent } from './module01/service-product-image-event-detail/service-product-image-event-detail.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { JsonArrayModelComponent } from './module01/json-array-model/json-array-
     LunarYearComponent,
     JsonObjectModelComponent,
     JsonArrayModelComponent,
+    ServiceProductImageEventComponent,
+    ServiceProductImageEventDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

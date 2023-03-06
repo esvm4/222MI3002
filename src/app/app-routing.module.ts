@@ -15,6 +15,8 @@ import { QuadraticEquationComponent } from './module01/quadratic-equation/quadra
 import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
 import { JsonObjectModelComponent } from './module01/json-object-model/json-object-model.component';
 import { JsonArrayModelComponent } from './module01/json-array-model/json-array-model.component';
+import { ServiceProductImageEventComponent } from './module01/service-product-image-event/service-product-image-event.component';
+import { ServiceProductImageEventDetailComponent } from './module01/service-product-image-event-detail/service-product-image-event-detail.component';
 
 const routes: Routes = [
   {
@@ -77,6 +79,14 @@ const routes: Routes = [
     path: 'json-array-model',
     component: JsonArrayModelComponent,
   },
+  {
+    path: 'service-product-image-event',
+    component: ServiceProductImageEventComponent,
+  },
+  {
+    path: 'service-product-image-event/:id',
+    component: ServiceProductImageEventDetailComponent,
+  },
 ];
 
 @NgModule({
@@ -101,4 +111,6 @@ export const RoutingComponent = [
   LunarYearComponent,
   JsonObjectModelComponent,
   JsonArrayModelComponent,
+  ServiceProductImageEventComponent,
+  ServiceProductImageEventDetailComponent,
 ];
