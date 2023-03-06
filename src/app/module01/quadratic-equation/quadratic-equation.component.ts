@@ -20,9 +20,9 @@ export class QuadraticEquationComponent {
     } else {
       this.result =
         'x1 = ' +
-        (-this.b + Math.sqrt(delta)) / (2 * this.a) +
+        ((-this.b + Math.sqrt(delta)) / (2 * this.a)).toFixed(2) +
         ', x2 = ' +
-        (-this.b - Math.sqrt(delta)) / (2 * this.a);
+        ((-this.b - Math.sqrt(delta)) / (2 * this.a)).toFixed(2);
     }
   }
 
