@@ -11,6 +11,7 @@ import { BindingClassComponent } from './module01/binding-class/binding-class.co
 import { BindingStyleComponent } from './module01/binding-style/binding-style.component';
 import { BindingEventComponent } from './module01/binding-event/binding-event.component';
 import { BindingTwoWayComponent } from './module01/binding-two-way/binding-two-way.component';
+import { QuadraticEquationComponent } from './module01/quadratic-equation/quadratic-equation.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
     path: 'binding-two-way',
     component: BindingTwoWayComponent,
   },
+  {
+    path: 'quadratic-equation',
+    component: QuadraticEquationComponent,
+  },
 ];
 
 @NgModule({
@@ -77,4 +82,5 @@ export const RoutingComponent = [
   BindingStyleComponent,
   BindingEventComponent,
   BindingTwoWayComponent,
+  QuadraticEquationComponent,
 ];
