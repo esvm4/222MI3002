@@ -16,6 +16,8 @@ import { BindingStyleComponent } from './module01/binding-style/binding-style.co
 import { BindingEventComponent } from './module01/binding-event/binding-event.component';
 import { BindingTwoWayComponent } from './module01/binding-two-way/binding-two-way.component';
 import { QuadraticEquationComponent } from './module01/quadratic-equation/quadratic-equation.component';
+import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
+import { JsonObjectModelComponent } from './module01/json-object-model/json-object-model.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { QuadraticEquationComponent } from './module01/quadratic-equation/quadra
     BindingEventComponent,
     BindingTwoWayComponent,
     QuadraticEquationComponent,
+    LunarYearComponent,
+    JsonObjectModelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

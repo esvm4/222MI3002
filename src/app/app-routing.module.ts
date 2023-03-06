@@ -12,6 +12,8 @@ import { BindingStyleComponent } from './module01/binding-style/binding-style.co
 import { BindingEventComponent } from './module01/binding-event/binding-event.component';
 import { BindingTwoWayComponent } from './module01/binding-two-way/binding-two-way.component';
 import { QuadraticEquationComponent } from './module01/quadratic-equation/quadratic-equation.component';
+import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
+import { JsonObjectModelComponent } from './module01/json-object-model/json-object-model.component';
 
 const routes: Routes = [
   {
@@ -62,6 +64,14 @@ const routes: Routes = [
     path: 'quadratic-equation',
     component: QuadraticEquationComponent,
   },
+  {
+    path: 'lunar-year',
+    component: LunarYearComponent,
+  },
+  {
+    path: 'json-object-model',
+    component: JsonObjectModelComponent,
+  },
 ];
 
 @NgModule({
@@ -83,4 +93,6 @@ export const RoutingComponent = [
   BindingEventComponent,
   BindingTwoWayComponent,
   QuadraticEquationComponent,
+  LunarYearComponent,
+  JsonObjectModelComponent,
 ];
