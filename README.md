@@ -1,12 +1,10 @@
-<h1 align="center">Web2 👋</h1>
-
 ## Author
 
 👤 **Thanh Ngoc** / K194020211
 
 - Github: [@esvm4](https://github.com/esvm4)
 
-# NgWeb2
+<h1 align="center">Web2 👋</h1>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
 
