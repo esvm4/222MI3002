@@ -14,6 +14,7 @@ import { BindingTwoWayComponent } from './module01/binding-two-way/binding-two-w
 import { QuadraticEquationComponent } from './module01/quadratic-equation/quadratic-equation.component';
 import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
 import { JsonObjectModelComponent } from './module01/json-object-model/json-object-model.component';
+import { JsonArrayModelComponent } from './module01/json-array-model/json-array-model.component';
 
 const routes: Routes = [
   {
@@ -72,6 +73,10 @@ const routes: Routes = [
     path: 'json-object-model',
     component: JsonObjectModelComponent,
   },
+  {
+    path: 'json-array-model',
+    component: JsonArrayModelComponent,
+  },
 ];
 
 @NgModule({
@@ -95,4 +100,5 @@ export const RoutingComponent = [
   QuadraticEquationComponent,
   LunarYearComponent,
   JsonObjectModelComponent,
+  JsonArrayModelComponent,
 ];

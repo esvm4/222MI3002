@@ -18,6 +18,7 @@ import { BindingTwoWayComponent } from './module01/binding-two-way/binding-two-w
 import { QuadraticEquationComponent } from './module01/quadratic-equation/quadratic-equation.component';
 import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
 import { JsonObjectModelComponent } from './module01/json-object-model/json-object-model.component';
+import { JsonArrayModelComponent } from './module01/json-array-model/json-array-model.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { JsonObjectModelComponent } from './module01/json-object-model/json-obje
     QuadraticEquationComponent,
     LunarYearComponent,
     JsonObjectModelComponent,
+    JsonArrayModelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
