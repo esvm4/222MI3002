@@ -1,0 +1,28 @@
+<h1>binding-event works!</h1>
+<button (click)="onClick($event)">Click Me</button>
+Name:
+<input type="text" #myName />
+<button (click)="onSubmit(myName.value)">Submit</button>
+<br />
+
+<input type="text" placeholder="a" (input)="geta($event)" value="{{ a }}" />
+<input type="text" placeholder="b" (input)="getb($event)" value="{{ b }}" />
+<br />
+
+<button (click)="calcSum(a, b)">Sum</button>
+<span>{{ sum }}</span>
+<br />
+
+<button (click)="calcSubstract(a, b)">Substract</button>
+<span>{{ substract }}</span>
+<br />
+
+<button (click)="calcMultiply(a, b)">Multiply</button>
+<span>{{ multiply }}</span>
+<br />
+
+<button (click)="calcDivide(a, b)">Divide</button>
+<span>{{ divide }}</span>
+<br />
+
+<button (click)="clear()">Clear</button>
