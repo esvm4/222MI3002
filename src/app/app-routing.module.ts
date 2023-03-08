@@ -17,6 +17,7 @@ import { JsonObjectModelComponent } from './module01/json-object-model/json-obje
 import { JsonArrayModelComponent } from './module01/json-array-model/json-array-model.component';
 import { ServiceProductImageEventComponent } from './module01/service-product-image-event/service-product-image-event.component';
 import { ServiceProductImageEventDetailComponent } from './module01/service-product-image-event-detail/service-product-image-event-detail.component';
+import { Bai14Component } from './module01/bai14/bai14.component';
 
 const routes: Routes = [
   {
@@ -87,6 +88,10 @@ const routes: Routes = [
     path: 'service-product-image-event/:id',
     component: ServiceProductImageEventDetailComponent,
   },
+  {
+    path: 'bai14',
+    component: Bai14Component,
+  },
 ];
 
 @NgModule({
@@ -113,4 +118,5 @@ export const RoutingComponent = [
   JsonArrayModelComponent,
   ServiceProductImageEventComponent,
   ServiceProductImageEventDetailComponent,
+  Bai14Component,
 ];

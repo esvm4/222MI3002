@@ -21,6 +21,7 @@ import { JsonObjectModelComponent } from './module01/json-object-model/json-obje
 import { JsonArrayModelComponent } from './module01/json-array-model/json-array-model.component';
 import { ServiceProductImageEventComponent } from './module01/service-product-image-event/service-product-image-event.component';
 import { ServiceProductImageEventDetailComponent } from './module01/service-product-image-event-detail/service-product-image-event-detail.component';
+import { Bai14Component } from './module01/bai14/bai14.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ServiceProductImageEventDetailComponent } from './module01/service-prod
     JsonArrayModelComponent,
     ServiceProductImageEventComponent,
     ServiceProductImageEventDetailComponent,
+    Bai14Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
