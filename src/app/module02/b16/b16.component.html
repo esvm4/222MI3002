@@ -1,0 +1,21 @@
+<h1>b16 works!</h1>
+
+{{ errMessage }}
+<table border="1">
+  <tr>
+    <th>Ma San Pham</th>
+    <th>Ten San Pham</th>
+    <th>Gia San Pham</th>
+    <th>Picture</th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{ p.ProductID }}</td>
+      <td>{{ p.ProductName }}</td>
+      <td>{{ p.Price }}</td>
+      <td>
+        <img src="{{ p.Image }}" width="50px" height="50px" />
+      </td>
+    </tr>
+  </tbody>
+</table>
