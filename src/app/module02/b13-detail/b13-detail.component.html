@@ -1,0 +1,26 @@
+<h1>b13-detail works!</h1>
+
+<table>
+  <tr>
+    <td colspan="2">
+      <button (click)="goBack()">Go Back</button>
+    </td>
+  </tr>
+  <tr>
+    <td>ID:</td>
+    <td>{{ selectedProduct.id }}</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>{{ selectedProduct.name }}</td>
+  </tr>
+  <tr>
+    <td>Price:</td>
+    <td>{{ selectedProduct.price }}</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img [src]="selectedProduct.image" height="100px" />
+    </td>
+  </tr>
+</table>

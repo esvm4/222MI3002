@@ -16,6 +16,8 @@ import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
 import { Index02Component } from './module02/index02/index02.component';
 import { B11Component } from './module02/b11/b11.component';
 import { B12Component } from './module02/b12/b12.component';
+import { B13Component } from './module02/b13/b13.component';
+import { B13DetailComponent } from './module02/b13-detail/b13-detail.component';
 
 const routes: Routes = [
   {
@@ -82,6 +84,14 @@ const routes: Routes = [
     path: 'b12',
     component: B12Component,
   },
+  {
+    path: 'b13',
+    component: B13Component,
+  },
+  {
+    path: 'b13/:id',
+    component: B13DetailComponent,
+  },
 ];
 
 @NgModule({
@@ -107,4 +117,6 @@ export const RoutingComponent = [
   Index02Component,
   B11Component,
   B12Component,
+  B13Component,
+  B13DetailComponent,
 ];
