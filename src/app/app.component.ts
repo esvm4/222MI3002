@@ -10,8 +10,4 @@ export class AppComponent {
   title = 'ngWeb2';
 
   constructor(private router: Router) {}
-
-  openListProduct() {
-    this.router.navigate(['list-product']);
-  }
 }

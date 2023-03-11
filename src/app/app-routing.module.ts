@@ -20,6 +20,7 @@ import { B16Component } from './module02/b16/b16.component';
 import { B17Component } from './module02/b17/b17.component';
 import { B18Component } from './module02/b18/b18.component';
 import { NotFoundComponent } from './module02/not-found/not-found.component';
+import { Index03Component } from './module03/index03/index03.component';
 
 const routes: Routes = [
   {
@@ -99,6 +100,10 @@ const routes: Routes = [
     component: B18Component,
   },
   {
+    path: 'index03',
+    component: Index03Component,
+  },
+  {
     path: '**',
     component: NotFoundComponent,
   },
@@ -131,4 +136,5 @@ export const RoutingComponent = [
   B17Component,
   B18Component,
   NotFoundComponent,
+  Index03Component,
 ];
