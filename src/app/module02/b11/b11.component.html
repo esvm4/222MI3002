@@ -1,0 +1,28 @@
+<h1>b11 works</h1>
+
+<table>
+  <tr>
+    <td>Product ID:</td>
+    <td>{{ product.id }}</td>
+  </tr>
+
+  <tr>
+    <td>Product Name:</td>
+    <td>
+      {{ product.name }}
+    </td>
+  </tr>
+
+  <tr>
+    <td>Product Price:</td>
+    <td>
+      {{ product.price }}
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <img [src]="product.image" (alt)="(product.name)" height="300px" />
+    </td>
+  </tr>
+</table>
