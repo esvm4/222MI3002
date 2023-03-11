@@ -1,0 +1,17 @@
+<h1>b12 works!</h1>
+
+<table>
+  <tr>
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+    <th>Product Image</th>
+  </tr>
+
+  <tr *ngFor="let product of products">
+    <td>{{ product.id }}</td>
+    <td>{{ product.name }}</td>
+    <td>{{ product.price }}</td>
+    <td><img [src]="product.image" height="100" /></td>
+  </tr>
+</table>

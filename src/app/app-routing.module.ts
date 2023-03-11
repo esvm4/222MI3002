@@ -15,6 +15,7 @@ import { QuadraticEquationComponent } from './module01/quadratic-equation/quadra
 import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
 import { Index02Component } from './module02/index02/index02.component';
 import { B11Component } from './module02/b11/b11.component';
+import { B12Component } from './module02/b12/b12.component';
 
 const routes: Routes = [
   {
@@ -77,6 +78,10 @@ const routes: Routes = [
     path: 'b11',
     component: B11Component,
   },
+  {
+    path: 'b12',
+    component: B12Component,
+  },
 ];
 
 @NgModule({
@@ -101,4 +106,5 @@ export const RoutingComponent = [
   LunarYearComponent,
   Index02Component,
   B11Component,
+  B12Component,
 ];
