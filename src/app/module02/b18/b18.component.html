@@ -1,0 +1,35 @@
+<h1>b18 works!</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th colspan="2">Name</th>
+    <th colspan="4">Email</th>
+    <th>Age</th>
+    <th colspan="4">#</th>
+  </tr>
+  <tbody *ngFor="let c of customers">
+    <tr colspan="12">
+      {{
+        c.CustomerTypeID
+      }}
+      -
+      {{
+        c.CustomerTypeName
+      }}
+    </tr>
+    <tr *ngFor="let i of c.Customers">
+      <td>
+        {{ i.ID }}
+      </td>
+      <td colspan="2">
+        {{ i.Name }}
+      </td>
+      <td colspan="4">{{ i.Email }}</td>
+      <td colspan="4">{{ i.Age }}</td>
+      <td colspan="4">
+        <img [src]="i.Image" [alt]="i.Name" width="100px" />
+      </td>
+    </tr>
+  </tbody>
+</table>

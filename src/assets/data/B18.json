@@ -1,0 +1,49 @@
+[
+  {
+    "CustomerTypeID": 1,
+    "CustomerTypeName": "VIP",
+    "Customers": [
+      {
+        "ID": "Cus123",
+        "Name": "Obama",
+        "Email": "obama@gmail.com",
+        "Age": 67,
+        "Image": "https://api.time.com/wp-content/uploads/2017/12/barack-obama.jpeg"
+      },
+      {
+        "ID": "Cus456",
+        "Name": "Justin Trudeau",
+        "Email": "trudeau@gmail.com",
+        "Age": 38,
+        "Image": "https://www.readersdigest.ca/wp-content/uploads/sites/14/2018/11/Justin-Trudeau.jpg"
+      },
+      {
+        "ID": "Cus789",
+        "Name": "Putin",
+        "Email": "putin@gmail.com",
+        "Age": 77,
+        "Image": "http://media2.s-nbcnews.com/j/newscms/2016_11/1458581/160315-putincv-0921_e89f96b6b280b48320995f1bc630ebea.nbcnews-ux-2880-1000.jpg"
+      }
+    ]
+  },
+  {
+    "CustomerTypeID": 2,
+    "CustomerTypeName": "Normal",
+    "Customers": [
+      {
+        "ID": "Cus000",
+        "Name": "Biden",
+        "Email": "biden@gmail.com",
+        "Age": 50,
+        "Image": "https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2021/02/Joe_Biden.jpg?quality=90&strip=all&ssl=1"
+      },
+      {
+        "ID": "Cus111",
+        "Name": "Macron",
+        "Email": "macron@gmail.com",
+        "Age": 67,
+        "Image": "https://www.africanstar.org/wp-content/uploads/2017/07/French-Pres-Emmanuel-Macron.jpg"
+      }
+    ]
+  }
+]

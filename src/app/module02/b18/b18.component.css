@@ -1,0 +1,11 @@
+table {
+  /* border-collapse: collapse; */
+  margin: auto;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px double grey;
+}
