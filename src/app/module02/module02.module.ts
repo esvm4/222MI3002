@@ -8,6 +8,7 @@ import { B13DetailComponent } from './b13-detail/b13-detail.component';
 import { B14Component } from './b14/b14.component';
 import { B15Component } from './b15/b15.component';
 import { B16Component } from './b16/b16.component';
+import { B17Component } from './b17/b17.component';
 
 
 
@@ -20,7 +21,8 @@ import { B16Component } from './b16/b16.component';
     B13DetailComponent,
     B14Component,
     B15Component,
-    B16Component
+    B16Component,
+    B17Component
   ],
   imports: [
     CommonModule

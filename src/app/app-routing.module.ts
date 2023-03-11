@@ -21,6 +21,7 @@ import { B13DetailComponent } from './module02/b13-detail/b13-detail.component';
 import { B14Component } from './module02/b14/b14.component';
 import { B15Component } from './module02/b15/b15.component';
 import { B16Component } from './module02/b16/b16.component';
+import { B17Component } from './module02/b17/b17.component';
 
 const routes: Routes = [
   {
@@ -107,6 +108,10 @@ const routes: Routes = [
     path: 'b16',
     component: B16Component,
   },
+  {
+    path: 'b17',
+    component: B17Component,
+  },
 ];
 
 @NgModule({
@@ -137,4 +142,5 @@ export const RoutingComponent = [
   B14Component,
   B15Component,
   B16Component,
+  B17Component,
 ];
