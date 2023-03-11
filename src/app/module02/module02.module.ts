@@ -10,6 +10,7 @@ import { B15Component } from './b15/b15.component';
 import { B16Component } from './b16/b16.component';
 import { B17Component } from './b17/b17.component';
 import { B18Component } from './b18/b18.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -24,7 +25,8 @@ import { B18Component } from './b18/b18.component';
     B15Component,
     B16Component,
     B17Component,
-    B18Component
+    B18Component,
+    NotFoundComponent
   ],
   imports: [
     CommonModule

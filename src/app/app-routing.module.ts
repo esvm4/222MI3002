@@ -19,6 +19,7 @@ import { B15Component } from './module02/b15/b15.component';
 import { B16Component } from './module02/b16/b16.component';
 import { B17Component } from './module02/b17/b17.component';
 import { B18Component } from './module02/b18/b18.component';
+import { NotFoundComponent } from './module02/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -97,6 +98,10 @@ const routes: Routes = [
     path: 'b18',
     component: B18Component,
   },
+  {
+    path: '**',
+    component: NotFoundComponent,
+  },
 ];
 
 @NgModule({
@@ -125,4 +130,5 @@ export const RoutingComponent = [
   B16Component,
   B17Component,
   B18Component,
+  NotFoundComponent,
 ];
