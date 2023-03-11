@@ -13,11 +13,6 @@ import { BindingEventComponent } from './module01/binding-event/binding-event.co
 import { BindingTwoWayComponent } from './module01/binding-two-way/binding-two-way.component';
 import { QuadraticEquationComponent } from './module01/quadratic-equation/quadratic-equation.component';
 import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
-import { JsonObjectModelComponent } from './module01/json-object-model/json-object-model.component';
-import { JsonArrayModelComponent } from './module01/json-array-model/json-array-model.component';
-import { ServiceProductImageEventComponent } from './module01/service-product-image-event/service-product-image-event.component';
-import { ServiceProductImageEventDetailComponent } from './module01/service-product-image-event-detail/service-product-image-event-detail.component';
-import { Bai14Component } from './module01/bai14/bai14.component';
 import { Index02Component } from './module02/index02/index02.component';
 import { B11Component } from './module02/b11/b11.component';
 
@@ -75,26 +70,6 @@ const routes: Routes = [
     component: LunarYearComponent,
   },
   {
-    path: 'json-object-model',
-    component: JsonObjectModelComponent,
-  },
-  {
-    path: 'json-array-model',
-    component: JsonArrayModelComponent,
-  },
-  {
-    path: 'service-product-image-event',
-    component: ServiceProductImageEventComponent,
-  },
-  {
-    path: 'service-product-image-event/:id',
-    component: ServiceProductImageEventDetailComponent,
-  },
-  {
-    path: 'bai14',
-    component: Bai14Component,
-  },
-  {
     path: 'index02',
     component: Index02Component,
   },
@@ -124,11 +99,6 @@ export const RoutingComponent = [
   BindingTwoWayComponent,
   QuadraticEquationComponent,
   LunarYearComponent,
-  JsonObjectModelComponent,
-  JsonArrayModelComponent,
-  ServiceProductImageEventComponent,
-  ServiceProductImageEventDetailComponent,
-  Bai14Component,
   Index02Component,
   B11Component,
 ];

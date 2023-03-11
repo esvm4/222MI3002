@@ -17,11 +17,6 @@ import { BindingEventComponent } from './module01/binding-event/binding-event.co
 import { BindingTwoWayComponent } from './module01/binding-two-way/binding-two-way.component';
 import { QuadraticEquationComponent } from './module01/quadratic-equation/quadratic-equation.component';
 import { LunarYearComponent } from './module01/lunar-year/lunar-year.component';
-import { JsonObjectModelComponent } from './module01/json-object-model/json-object-model.component';
-import { JsonArrayModelComponent } from './module01/json-array-model/json-array-model.component';
-import { ServiceProductImageEventComponent } from './module01/service-product-image-event/service-product-image-event.component';
-import { ServiceProductImageEventDetailComponent } from './module01/service-product-image-event-detail/service-product-image-event-detail.component';
-import { Bai14Component } from './module01/bai14/bai14.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +35,6 @@ import { Bai14Component } from './module01/bai14/bai14.component';
     BindingTwoWayComponent,
     QuadraticEquationComponent,
     LunarYearComponent,
-    JsonObjectModelComponent,
-    JsonArrayModelComponent,
-    ServiceProductImageEventComponent,
-    ServiceProductImageEventDetailComponent,
-    Bai14Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
