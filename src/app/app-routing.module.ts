@@ -18,6 +18,7 @@ import { JsonArrayModelComponent } from './module01/json-array-model/json-array-
 import { ServiceProductImageEventComponent } from './module01/service-product-image-event/service-product-image-event.component';
 import { ServiceProductImageEventDetailComponent } from './module01/service-product-image-event-detail/service-product-image-event-detail.component';
 import { Bai14Component } from './module01/bai14/bai14.component';
+import { Index02Component } from './module02/index02/index02.component';
 
 const routes: Routes = [
   {
@@ -92,6 +93,10 @@ const routes: Routes = [
     path: 'bai14',
     component: Bai14Component,
   },
+  {
+    path: 'index02',
+    component: Index02Component,
+  },
 ];
 
 @NgModule({
@@ -119,4 +124,5 @@ export const RoutingComponent = [
   ServiceProductImageEventComponent,
   ServiceProductImageEventDetailComponent,
   Bai14Component,
+  Index02Component,
 ];
