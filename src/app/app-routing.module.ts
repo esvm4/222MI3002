@@ -18,6 +18,7 @@ import { B11Component } from './module02/b11/b11.component';
 import { B12Component } from './module02/b12/b12.component';
 import { B13Component } from './module02/b13/b13.component';
 import { B13DetailComponent } from './module02/b13-detail/b13-detail.component';
+import { B14Component } from './module02/b14/b14.component';
 
 const routes: Routes = [
   {
@@ -92,6 +93,10 @@ const routes: Routes = [
     path: 'b13/:id',
     component: B13DetailComponent,
   },
+  {
+    path: 'b14',
+    component: B14Component,
+  },
 ];
 
 @NgModule({
@@ -119,4 +124,5 @@ export const RoutingComponent = [
   B12Component,
   B13Component,
   B13DetailComponent,
+  B14Component,
 ];
