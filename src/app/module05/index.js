@@ -11,3 +11,30 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
+let database = [
+  {
+    BookId: "b1",
+    BookName: "Kỹ thuật lập trình cơ bản",
+    Price: 70,
+    Image: "b1.png",
+  },
+  {
+    BookId: "b2",
+    BookName: "Kỹ thuật lập trình nâng cao",
+    Price: 100,
+    Image: "b2.png",
+  },
+  { BookId: "b3", BookName: "Máy học cơ bản", Price: 200, Image: "b3.png" },
+  { BookId: "b4", BookName: "Máy học nâng cao", Price: 300, Image: "b4.png" },
+  {
+    BookId: "b5",
+    BookName: "Lập trình Robot cơ bản",
+    Price: 250,
+    Image: "b5.png",
+  },
+];
+
+app.get("/books", (req, res) => {
+  res.send(database);
+});
