@@ -1,0 +1,42 @@
+<!-- <p>{{ errMessage }}</p> -->
+<hr />
+<div class="box">
+  <h1>QUẢN LÝ THÔNG TIN SÁCH</h1>
+  <hr />
+  <div class="btn-create">
+    <!-- <button (click)="createBook()">Create New</button> -->
+  </div>
+  <br />
+  <table border="1">
+    <thead>
+      <th>ISBN</th>
+      <th colspan="2">Title</th>
+      <th colspan="2">Author</th>
+      <th>Price</th>
+      <th colspan="4">Description</th>
+      <th colspan="4">Cover</th>
+      <th colspan="2">Published</th>
+      <th>Inventory</th>
+      <th>Publisher</th>
+      <th>#</th>
+      <th colspan="2"></th>
+    </thead>
+    <tr *ngFor="let book of books">
+      <td>{{ book.isbn }}</td>
+      <td colspan="2">{{ book.title }}</td>
+      <td colspan="2">{{ book.author }}</td>
+      <td class="center">{{ book.price | currency }}</td>
+      <td colspan="4">{{ book.description }}</td>
+      <td colspan="4">Cover</td>
+      <td colspan="2">{{ book.published }}</td>
+      <td class="center">{{ book.inventory }}</td>
+      <td>{{ book.publisher }}</td>
+      <td><a [href]="book.website">Link</a></td>
+      <td class="center">
+        <button (click)="updateBook()">Edit</button> <br />
+        <button (click)="viewDetail()">Details</button> <br />
+        <button (click)="deleteBook()">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>
