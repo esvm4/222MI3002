@@ -1,0 +1,24 @@
+<h1>B44 works!</h1>
+
+<p>{{ errMessage }}</p>
+Book ID: <input type="text" #id />
+<button (click)="searchBook(id.value)">Search</button>
+<table>
+  <tr>
+    <td>Book ID:</td>
+    <td>{{ book.BookID }}</td>
+  </tr>
+  <tr>
+    <td>Book Name:</td>
+    <td>{{ book.BookName }}</td>
+  </tr>
+  <tr>
+    <td>Price:</td>
+    <td>{{ book.Price }}</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="assets/img/{{ book.Image }}" />
+    </td>
+  </tr>
+</table>

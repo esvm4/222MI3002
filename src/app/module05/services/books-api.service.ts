@@ -38,4 +38,23 @@ export class BookAPIService {
   handleError(error: HttpErrorResponse) {
     return throwError(() => new Error(error.message));
   }
+
+  // get book by ID
+  getBook(BookID: string): Observable<any> {
+    const headers = new HttpHeaders().set(
+      'Content-Type',
+      'text/plain;charset=utf-8'
+    );
+    const requestOptions: Object = {
+      headers: headers,
+      responseType: 'text',
+    };
+    return this._http
+      .get<any>('http://localhost:3000/books/' + BookID, requestOptions)
+      .pipe(
+        map((res) => JSON.parse(res) as IBook),
+        retry(3),
+        catchError(this.handleError)
+      );
+  }
 }
