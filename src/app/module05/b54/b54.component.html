@@ -4,7 +4,7 @@
   <h1>BOOK INFORMATION MANAGEMENT</h1>
   <hr />
   <div class="btn-create">
-    <!-- <button (click)="createBook()">Create New</button> -->
+    <button (click)="createBook()">Create New</button>
   </div>
   <br />
   <table border="1">
@@ -14,7 +14,6 @@
       <th colspan="2">Author</th>
       <th>Price</th>
       <th colspan="4">Description</th>
-      <th colspan="4">Cover</th>
       <th colspan="2">Published</th>
       <th>Inventory</th>
       <th>Publisher</th>
@@ -27,15 +26,14 @@
       <td colspan="2">{{ book.author }}</td>
       <td class="center">{{ book.price | currency }}</td>
       <td colspan="4">{{ book.description }}</td>
-      <td colspan="4">Cover</td>
       <td colspan="2">{{ book.published }}</td>
       <td class="center">{{ book.inventory }}</td>
       <td>{{ book.publisher }}</td>
       <td><a [href]="book.website">Link</a></td>
       <td class="center">
-        <button (click)="updateBook()">Edit</button> <br />
+        <button (click)="updateBook(book)">Edit</button> <br />
         <button (click)="viewDetail(book)">Details</button> <br />
-        <button (click)="deleteBook()">Delete</button>
+        <button (click)="deleteBook(book)">Delete</button>
       </td>
     </tr>
   </table>

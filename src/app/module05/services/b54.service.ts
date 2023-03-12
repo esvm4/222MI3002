@@ -53,4 +53,27 @@ export class B54Service {
         catchError(this.handleError)
       );
   }
+
+  // PUT: update a book
+  putBook(aBook: any): Observable<any> {
+    const headers = new HttpHeaders().set(
+      'Content-Type',
+      'application/json;charset=utf-8'
+    );
+    const requestOptions: Object = {
+      headers: headers,
+      responseType: 'text',
+    };
+    return this._http
+      .put<any>(
+        'http://localhost:3000/books/',
+        JSON.stringify(aBook),
+        requestOptions
+      )
+      .pipe(
+        map((res) => JSON.parse(res) as Array<IB54>),
+        retry(3),
+        catchError(this.handleError)
+      );
+  }
 }

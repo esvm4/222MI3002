@@ -26,7 +26,9 @@ export class B54Component {
   }
   createBook() {}
 
-  updateBook() {}
+  updateBook(book: any) {
+    this._router.navigate(['b54/edit', book.isbn]);
+  }
 
-  deleteBook() {}
+  deleteBook(book: any) {}
 }

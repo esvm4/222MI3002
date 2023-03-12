@@ -1,0 +1,22 @@
+* {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 400px;
+}
+
+button {
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+button.red {
+  background-color: red;
+}
+
+button.green {
+  background-color: green;
+}

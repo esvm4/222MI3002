@@ -29,6 +29,7 @@ import { B48B49Component } from './module05/b48-b49/b48-b49.component';
 import { B50B51Component } from './module05/b50-b51/b50-b51.component';
 import { B54Component } from './module05/b54/b54.component';
 import { B54DetailComponent } from './module05/b54-detail/b54-detail.component';
+import { B54UpdateComponent } from './module05/b54-update/b54-update.component';
 
 const routes: Routes = [
   {
@@ -143,6 +144,10 @@ const routes: Routes = [
     path: 'b54/:isbn',
     component: B54DetailComponent,
   },
+  {
+    path: 'b54/edit/:isbn',
+    component: B54UpdateComponent,
+  },
   // {
   //   path: '**',
   //   component: NotFoundComponent,
@@ -185,4 +190,5 @@ export const RoutingComponent = [
   B50B51Component,
   B54Component,
   B54DetailComponent,
+  B54UpdateComponent,
 ];
