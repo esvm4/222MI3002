@@ -9,6 +9,7 @@ import { B50B51Component } from './b50-b51/b50-b51.component';
 import { B54Component } from './b54/b54.component';
 import { B54DetailComponent } from './b54-detail/b54-detail.component';
 import { B54UpdateComponent } from './b54-update/b54-update.component';
+import { B54CreateComponent } from './b54-create/b54-create.component';
 
 
 
@@ -22,7 +23,8 @@ import { B54UpdateComponent } from './b54-update/b54-update.component';
     B50B51Component,
     B54Component,
     B54DetailComponent,
-    B54UpdateComponent
+    B54UpdateComponent,
+    B54CreateComponent
   ],
   imports: [
     CommonModule

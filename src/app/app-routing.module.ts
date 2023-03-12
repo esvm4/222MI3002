@@ -30,6 +30,7 @@ import { B50B51Component } from './module05/b50-b51/b50-b51.component';
 import { B54Component } from './module05/b54/b54.component';
 import { B54DetailComponent } from './module05/b54-detail/b54-detail.component';
 import { B54UpdateComponent } from './module05/b54-update/b54-update.component';
+import { B54CreateComponent } from './module05/b54-create/b54-create.component';
 
 const routes: Routes = [
   {
@@ -145,8 +146,12 @@ const routes: Routes = [
     component: B54DetailComponent,
   },
   {
-    path: 'b54/edit/:isbn',
+    path: 'b54-edit/:isbn',
     component: B54UpdateComponent,
+  },
+  {
+    path: 'b54-create',
+    component: B54CreateComponent,
   },
   // {
   //   path: '**',
@@ -191,4 +196,5 @@ export const RoutingComponent = [
   B54Component,
   B54DetailComponent,
   B54UpdateComponent,
+  B54CreateComponent,
 ];

@@ -24,10 +24,12 @@ export class B54Component {
   viewDetail(book: any) {
     this._router.navigate(['b54', book.isbn]);
   }
-  createBook() {}
+  createBook() {
+    this._router.navigate(['b54-create']);
+  }
 
   updateBook(book: any) {
-    this._router.navigate(['b54/edit', book.isbn]);
+    this._router.navigate(['b54-edit', book.isbn]);
   }
 
   deleteBook(book: any) {}
