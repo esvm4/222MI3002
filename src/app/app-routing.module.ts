@@ -24,6 +24,7 @@ import { Index03Component } from './module03/index03/index03.component';
 import { Index05Component } from './module05/index05/index05.component';
 import { B43Component } from './module05/b43/b43.component';
 import { B44Component } from './module05/b44/b44.component';
+import { B46B47Component } from './module05/b46-b47/b46-b47.component';
 
 const routes: Routes = [
   {
@@ -119,6 +120,10 @@ const routes: Routes = [
     component: B44Component,
   },
   {
+    path: 'b46-47',
+    component: B46B47Component,
+  },
+  {
     path: '**',
     component: NotFoundComponent,
   },
@@ -155,4 +160,5 @@ export const RoutingComponent = [
   Index05Component,
   B43Component,
   B44Component,
+  B46B47Component,
 ];
