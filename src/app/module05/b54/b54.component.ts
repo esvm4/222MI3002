@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { B54Service } from '../services/b54.service';
+import { Router } from '@angular/router';
+import { IB54, CB54 } from '../interfaces/b54';
 
 @Component({
   selector: 'app-b54',
@@ -9,7 +11,7 @@ import { B54Service } from '../services/b54.service';
 export class B54Component {
   books: any;
   errMessage: string = '';
-  constructor(private _service: B54Service) {
+  constructor(private _service: B54Service, private _router: Router) {
     this._service.getBooks().subscribe({
       next: (data) => {
         this.books = data;
@@ -19,8 +21,9 @@ export class B54Component {
       },
     });
   }
-
-  viewDetail() {}
+  viewDetail(book: any) {
+    this._router.navigate(['b54', book.isbn]);
+  }
   createBook() {}
 
   updateBook() {}

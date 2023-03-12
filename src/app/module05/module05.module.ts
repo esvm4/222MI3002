@@ -7,6 +7,7 @@ import { B46B47Component } from './b46-b47/b46-b47.component';
 import { B48B49Component } from './b48-b49/b48-b49.component';
 import { B50B51Component } from './b50-b51/b50-b51.component';
 import { B54Component } from './b54/b54.component';
+import { B54DetailComponent } from './b54-detail/b54-detail.component';
 
 
 
@@ -18,7 +19,8 @@ import { B54Component } from './b54/b54.component';
     B46B47Component,
     B48B49Component,
     B50B51Component,
-    B54Component
+    B54Component,
+    B54DetailComponent
   ],
   imports: [
     CommonModule

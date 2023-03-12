@@ -1,7 +1,7 @@
 <!-- <p>{{ errMessage }}</p> -->
 <hr />
 <div class="box">
-  <h1>QUẢN LÝ THÔNG TIN SÁCH</h1>
+  <h1>BOOK INFORMATION MANAGEMENT</h1>
   <hr />
   <div class="btn-create">
     <!-- <button (click)="createBook()">Create New</button> -->
@@ -34,7 +34,7 @@
       <td><a [href]="book.website">Link</a></td>
       <td class="center">
         <button (click)="updateBook()">Edit</button> <br />
-        <button (click)="viewDetail()">Details</button> <br />
+        <button (click)="viewDetail(book)">Details</button> <br />
         <button (click)="deleteBook()">Delete</button>
       </td>
     </tr>

@@ -1,0 +1,75 @@
+<hr />
+<button (click)="goBack()">Go Back</button>
+<table>
+  <tr>
+    <th>isbn</th>
+    <td>
+      {{ selectedBook.isbn }}
+    </td>
+  </tr>
+  <tr>
+    <th>title</th>
+    <td>
+      {{ selectedBook.title }}
+    </td>
+  </tr>
+  <tr>
+    <th>subtitle</th>
+    <td>
+      {{ selectedBook.subtitle }}
+    </td>
+  </tr>
+  <tr>
+    <th>price</th>
+    <td>
+      {{ selectedBook.price }}
+    </td>
+  </tr>
+  <tr>
+    <th>author</th>
+    <td>
+      {{ selectedBook.author }}
+    </td>
+  </tr>
+  <tr>
+    <th>publisher</th>
+    <td>
+      {{ selectedBook.publisher }}
+    </td>
+  </tr>
+  <tr>
+    <th>published</th>
+    <td>
+      {{ selectedBook.published }}
+    </td>
+  </tr>
+  <tr>
+    <th>inventory</th>
+    <td>{{ selectedBook.inventory }}</td>
+  </tr>
+  <tr>
+    <th>pages</th>
+    <td>
+      {{ selectedBook.pages }}
+    </td>
+  </tr>
+  <tr>
+    <th>description</th>
+    <td>
+      {{ selectedBook.description }}
+    </td>
+  </tr>
+  <tr>
+    <th>website</th>
+    <td>
+      <a [href]="selectedBook.website">Link</a>
+    </td>
+  </tr>
+  <tr>
+    <th>cover</th>
+    <img
+      src="http://localhost:3000/image/{{ selectedBook.isbn }}.jpg"
+      alt="{{ selectedBook.title }}"
+    />
+  </tr>
+</table>
