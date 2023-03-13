@@ -100,4 +100,24 @@ export class B54Service {
         catchError(this.handleError)
       );
   }
+
+  // DELETE: delete a book
+  deleteBook(isbn: string): Observable<any> {
+    const headers = new HttpHeaders().set(
+      'Content-Type',
+      'application/json;charset=utf-8'
+    );
+
+    const requestOptions: Object = {
+      headers: headers,
+      responseType: 'text',
+    };
+    return this._http
+      .delete<any>('http://localhost:3000/books/' + isbn, requestOptions)
+      .pipe(
+        map((res) => JSON.parse(res) as Array<IB54>),
+        retry(3),
+        catchError(this.handleError)
+      );
+  }
 }

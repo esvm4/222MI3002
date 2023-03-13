@@ -32,5 +32,22 @@ export class B54Component {
     this._router.navigate(['b54-edit', book.isbn]);
   }
 
-  deleteBook(book: any) {}
+  deleteBook(isbn: any) {
+    this._service.deleteBook(isbn).subscribe({
+      next: (data) => {
+        this.books = data;
+      },
+      error: (err) => {
+        this.errMessage = err;
+      },
+    });
+  }
+
+  // confirm
+  delete(isbn: any) {
+    if (window.confirm('Delete this book?')) {
+      //put your delete method logic here
+      this.deleteBook(isbn);
+    }
+  }
 }
