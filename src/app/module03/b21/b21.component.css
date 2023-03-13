@@ -1,0 +1,20 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+* {
+  margin: 0 8px 8px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgb(162, 162, 162);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgb(162, 162, 162);
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}

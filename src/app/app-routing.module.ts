@@ -33,6 +33,7 @@ import { B54CreateComponent } from './module05/b54-create/b54-create.component';
 import { Index04Component } from './module04/index04/index04.component';
 import { NotFoundComponent } from './module02/not-found/not-found.component';
 import { B29Component } from './module04/b29/b29.component';
+import { B21Component } from './module03/b21/b21.component';
 
 const routes: Routes = [
   {
@@ -163,6 +164,10 @@ const routes: Routes = [
     path: 'b29',
     component: B29Component,
   },
+  {
+    path: 'b21',
+    component: B21Component,
+  },
   // {
   //   path: '**',
   //   component: NotFoundComponent,
@@ -208,5 +213,6 @@ export const RoutingComponent = [
   B54CreateComponent,
   Index04Component,
   B29Component,
+  B21Component,
   // NotFoundComponent,
 ];
