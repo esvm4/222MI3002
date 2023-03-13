@@ -7,7 +7,7 @@ import { catchError, Observable, retry, throwError } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductHttpService {
-  private _url: string = '../assets/data/products.json';
+  private _url: string = '../assets/data/B15.json';
   constructor(private _http: HttpClient) {}
   getProducts(): Observable<IProduct[]> {
     return this._http.get<IProduct[]>(this._url);
