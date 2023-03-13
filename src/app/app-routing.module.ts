@@ -19,7 +19,6 @@ import { B15Component } from './module02/b15/b15.component';
 import { B16Component } from './module02/b16/b16.component';
 import { B17Component } from './module02/b17/b17.component';
 import { B18Component } from './module02/b18/b18.component';
-import { NotFoundComponent } from './module02/not-found/not-found.component';
 import { Index03Component } from './module03/index03/index03.component';
 import { Index05Component } from './module05/index05/index05.component';
 import { B43Component } from './module05/b43/b43.component';
@@ -31,6 +30,8 @@ import { B54Component } from './module05/b54/b54.component';
 import { B54DetailComponent } from './module05/b54-detail/b54-detail.component';
 import { B54UpdateComponent } from './module05/b54-update/b54-update.component';
 import { B54CreateComponent } from './module05/b54-create/b54-create.component';
+import { Index04Component } from './module04/index04/index04.component';
+import { NotFoundComponent } from './module02/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -153,6 +154,10 @@ const routes: Routes = [
     path: 'b54-create',
     component: B54CreateComponent,
   },
+  {
+    path: 'index04',
+    component: Index04Component,
+  },
   // {
   //   path: '**',
   //   component: NotFoundComponent,
@@ -185,7 +190,6 @@ export const RoutingComponent = [
   B16Component,
   B17Component,
   B18Component,
-  NotFoundComponent,
   Index03Component,
   Index05Component,
   B43Component,
@@ -197,4 +201,6 @@ export const RoutingComponent = [
   B54DetailComponent,
   B54UpdateComponent,
   B54CreateComponent,
+  Index04Component,
+  // NotFoundComponent,
 ];
