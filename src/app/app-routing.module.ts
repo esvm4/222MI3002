@@ -32,6 +32,7 @@ import { B54UpdateComponent } from './module05/b54-update/b54-update.component';
 import { B54CreateComponent } from './module05/b54-create/b54-create.component';
 import { Index04Component } from './module04/index04/index04.component';
 import { NotFoundComponent } from './module02/not-found/not-found.component';
+import { B29Component } from './module04/b29/b29.component';
 
 const routes: Routes = [
   {
@@ -158,6 +159,10 @@ const routes: Routes = [
     path: 'index04',
     component: Index04Component,
   },
+  {
+    path: 'b29',
+    component: B29Component,
+  },
   // {
   //   path: '**',
   //   component: NotFoundComponent,
@@ -202,5 +207,6 @@ export const RoutingComponent = [
   B54UpdateComponent,
   B54CreateComponent,
   Index04Component,
+  B29Component,
   // NotFoundComponent,
 ];
